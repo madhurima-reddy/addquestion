@@ -1,0 +1,29 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity</th>                            
+          
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let Q of Questions">
+            <td>{{Q.Question_id}}</td>
+            <td>{{Q.Question_No}}</td>
+            <td>{{Q.Course_id}</td>
+            <td>{{Q.Question1}}</td>
+            
+            <td>
+               <!-- <button [routerLink]="['/update/', product.id]">Update</button>
+                <button type="button" (click)="delete(product.id)">Remove</button>-->
+            </td>
+           
+             
+           
+        </tr>
+    </tbody>
+</table>
+
